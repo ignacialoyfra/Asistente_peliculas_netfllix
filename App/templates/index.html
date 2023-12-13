@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Ejemplo</title>
+ 
+    <script src="https://unpkg.com/htmx.org/dist/htmx.min.js"></script>
+</head>
+<body>
+    <h1>Este es un Encabezado de Ejemplo</h1>
+    <p>Bienvenido a la página de ejemplo. Aquí puedes agregar más contenido.</p>
+
+    <form hx-post="/submit" hx-target="#respuesta" hx-swap="outerHTML">
+       
+        <div id="contenedor-dropdown" hx-get="/dropdown-data" hx-trigger="load">
+      
+        </div>
+        
+        <input type="submit" value="Enviar Selección">
+    </form>
+
+   
+    <div id="respuesta"></div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Ejemplo</title>
+    <!-- Incluir HTMX -->
+    <script src="https://unpkg.com/htmx.org/dist/htmx.min.js"></script>
+</head>
+<body>
+    <h1>Este es un Encabezado de Ejemplo</h1>
+    <p>Bienvenido a la página de ejemplo. Aquí puedes agregar más contenido.</p>
+
+    <!-- Select con HTMX -->
+    <select hx-post="/tu-endpoint" hx-trigger="change" name="seleccion">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+    <!-- Div para mostrar la respuesta -->
+    <div id="respuesta"></div>
+</body>
+</html>
+
+
+
